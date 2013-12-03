@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <vehicle>
+    <id>2</id>
+    <name>Generic 11-bit</name>
+    <protocol>ISO15765</protocol>
+    <speed>250000</speed>
+    <obdcodefile />
+    <addressbits>11</addressbits>
+    <secured>false</secured>
+    <checksum>false</checksum>
+    <initprocedure>0</initprocedure>
+    <txaddrlist>
+      <addrlist>
+        <address>0x07df Broadcast</address>
+        <broadcast>true</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07e0</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07e1</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07e2</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07e3</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07e4</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07e5</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07e6</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07e7</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </txaddrlist>
+    <rxaddrlist>
+      <addrlist>
+        <address>0x07e8</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07e9</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07ea</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07eb</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07ec</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07ed</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07ee</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07ef</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </rxaddrlist>
+    <msgflags>
+      <flags>
+        <flag>ISO15765_FRAME_PAD</flag>
+      </flags>
+    </msgflags>
+    <connflags />
+    <ecus />
+    <config />
+    <pidgroups>
+      <pidgroup>
+        <id>1</id>
+        <name>SAE PIDs</name>
+        <mode_int>1</mode_int>
+      </pidgroup>
+    </pidgroups>
+    <capabilities />
+  </vehicle>
+  <vehicle>
+    <id>3</id>
+    <name>Generic 29-bit</name>
+    <protocol>ISO15765</protocol>
+    <speed>0</speed>
+    <testeraddress>0xF3</testeraddress>
+    <obdcodefile />
+    <addressbits>29</addressbits>
+    <secured>false</secured>
+    <checksum>false</checksum>
+    <initprocedure>0</initprocedure>
+    <txaddrlist>
+      <addrlist>
+        <address>0x18db3300 Broadcast</address>
+        <broadcast>true</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x18da0000</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </txaddrlist>
+    <rxaddrlist>
+      <addrlist>
+        <address>0x18da0000</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </rxaddrlist>
+    <msgflags>
+      <flags>
+        <flag>CAN_29BIT_ID</flag>
+      </flags>
+      <flags>
+        <flag>ISO15765_FRAME_PAD</flag>
+      </flags>
+    </msgflags>
+    <connflags>
+      <flags>
+        <flag>CAN_29BIT_ID</flag>
+      </flags>
+    </connflags>
+    <ecus>
+      <ecuData>
+        <id>0x10</id>
+        <name>EMS</name>
+      </ecuData>
+      <ecuData>
+        <id>0x17</id>
+        <name>TCU</name>
+      </ecuData>
+    </ecus>
+    <config />
+    <pidgroups>
+      <pidgroup>
+        <id>1</id>
+        <name>SAE PIDs</name>
+        <mode_int>1</mode_int>
+      </pidgroup>
+    </pidgroups>
+    <capabilities />
+  </vehicle>
+  <vehicle>
+    <id>5</id>
+    <name>ISO9141</name>
+    <protocol>ISO9141</protocol>
+    <speed>10400</speed>
+    <testeraddress>0xF1</testeraddress>
+    <obdcodefile>obdcodes_Subaru.txt</obdcodefile>
+    <addressbits>11</addressbits>
+    <secured>false</secured>
+    <checksum>true</checksum>
+    <initprocedure>0</initprocedure>
+    <txaddrlist>
+      <addrlist>
+        <address>0xc0 Broadcast</address>
+        <broadcast>true</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x80</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </txaddrlist>
+    <rxaddrlist>
+      <addrlist>
+        <address>0xf0</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </rxaddrlist>
+    <msgflags />
+    <connflags />
+    <ecus />
+    <config>
+      <configpars>
+        <name>DATA_RATE</name>
+        <value>10400</value>
+      </configpars>
+      <configpars>
+        <name>P1_MAX</name>
+        <value>10</value>
+      </configpars>
+      <configpars>
+        <name>P3_MIN</name>
+        <value>0</value>
+      </configpars>
+      <configpars>
+        <name>P4_MIN</name>
+        <value>0</value>
+      </configpars>
+      <configpars>
+        <name>LOOPBACK</name>
+        <value>1</value>
+      </configpars>
+    </config>
+    <pidgroups>
+      <pidgroup>
+        <id>1</id>
+        <name>SAE PIDs</name>
+        <mode_int>1</mode_int>
+      </pidgroup>
+    </pidgroups>
+    <capabilities>
+      <capability>
+        <name>SSM</name>
+      </capability>
+    </capabilities>
+  </vehicle>
+  <vehicle>
+    <id>4</id>
+    <name>Subaru CAN-Bus</name>
+    <brand>Subaru</brand>
+    <protocol>ISO15765</protocol>
+    <speed>0</speed>
+    <obdcodefile>obdcodes_Subaru.txt</obdcodefile>
+    <addressbits>11</addressbits>
+    <secured>false</secured>
+    <checksum>false</checksum>
+    <initprocedure>0</initprocedure>
+    <txaddrlist>
+      <addrlist>
+        <address>0x07df Broadcast</address>
+        <broadcast>true</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x07e0</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </txaddrlist>
+    <rxaddrlist>
+      <addrlist>
+        <address>0x07e8</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </rxaddrlist>
+    <msgflags>
+      <flags>
+        <flag>ISO15765_FRAME_PAD</flag>
+      </flags>
+    </msgflags>
+    <connflags />
+    <ecus>
+      <ecuData>
+        <id>0x00</id>
+        <name>ECM</name>
+      </ecuData>
+      <ecuData>
+        <id>0x01</id>
+        <name>TCU</name>
+      </ecuData>
+      <ecuData>
+        <id>0x02</id>
+        <name>TBD2</name>
+      </ecuData>
+      <ecuData>
+        <id>0x03</id>
+        <name>TBD3</name>
+      </ecuData>
+      <ecuData>
+        <id>0x04</id>
+        <name>TBD4</name>
+      </ecuData>
+      <ecuData>
+        <id>0x05</id>
+        <name>TBD5</name>
+      </ecuData>
+      <ecuData>
+        <id>0x06</id>
+        <name>TBD6</name>
+      </ecuData>
+      <ecuData>
+        <id>0x07</id>
+        <name>TBD7</name>
+      </ecuData>
+    </ecus>
+    <config>
+      <configpars>
+        <name>ISO15765_BS</name>
+        <value>1</value>
+      </configpars>
+      <configpars>
+        <name>ISO15765_STMIN</name>
+        <value>42</value>
+      </configpars>
+    </config>
+    <pidgroups>
+      <pidgroup>
+        <id>1</id>
+        <name>SAE PIDs</name>
+        <mode_int>1</mode_int>
+      </pidgroup>
+      <pidgroup>
+        <id>10</id>
+        <name>SSM Data</name>
+        <mode_int>168</mode_int>
+      </pidgroup>
+      <pidgroup>
+        <id>2</id>
+        <name>Extended PIDs.</name>
+        <mode_int>34</mode_int>
+      </pidgroup>
+      <pidgroup>
+        <id>11</id>
+        <name>Subaru Extended PIDs</name>
+        <mode_int>34</mode_int>
+      </pidgroup>
+      <pidgroup>
+        <id>8</id>
+        <name>Vehicle Information</name>
+        <mode_int>9</mode_int>
+      </pidgroup>
+    </pidgroups>
+    <capabilities>
+      <capability>
+        <name>SSM</name>
+      </capability>
+    </capabilities>
+  </vehicle>
+  <vehicle>
+    <id>5</id>
+    <name>Subaru ISO9141</name>
+    <brand>Subaru</brand>
+    <protocol>ISO9141</protocol>
+    <speed>4800</speed>
+    <testeraddress>0xF0</testeraddress>
+    <obdcodefile>obdcodes_Subaru.txt</obdcodefile>
+    <addressbits>11</addressbits>
+    <secured>false</secured>
+    <checksum>false</checksum>
+    <initprocedure>0</initprocedure>
+    <txaddrlist>
+      <addrlist>
+        <address>0xc0 Broadcast</address>
+        <broadcast>true</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x80</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </txaddrlist>
+    <rxaddrlist>
+      <addrlist>
+        <address>0xf0</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </rxaddrlist>
+    <msgflags />
+    <connflags>
+      <flags>
+        <flag>ISO9141_K_LINE_ONLY</flag>
+      </flags>
+      <flags>
+        <flag>ISO9141_NO_CHECKSUM</flag>
+      </flags>
+    </connflags>
+    <ecus />
+    <config>
+      <configpars>
+        <name>DATA_RATE</name>
+        <value>4800</value>
+      </configpars>
+      <configpars>
+        <name>P1_MAX</name>
+        <value>2</value>
+      </configpars>
+      <configpars>
+        <name>P3_MIN</name>
+        <value>0</value>
+      </configpars>
+      <configpars>
+        <name>P4_MIN</name>
+        <value>0</value>
+      </configpars>
+      <configpars>
+        <name>LOOPBACK</name>
+        <value>1</value>
+      </configpars>
+    </config>
+    <pidgroups>
+      <pidgroup>
+        <id>10</id>
+        <name>SSM Data</name>
+        <mode_int>168</mode_int>
+      </pidgroup>
+      <pidgroup>
+        <id>1</id>
+        <name>SAE PIDs</name>
+        <mode_int>1</mode_int>
+      </pidgroup>
+      <pidgroup>
+        <id>8</id>
+        <name>Vehicle Information</name>
+        <mode_int>9</mode_int>
+      </pidgroup>
+    </pidgroups>
+    <capabilities>
+      <capability>
+        <name>SSM</name>
+      </capability>
+    </capabilities>
+  </vehicle>
+  <vehicle>
+    <id>6</id>
+    <name>Test</name>
+    <protocol>ISO15765</protocol>
+    <speed>0</speed>
+    <testeraddress>0xF2</testeraddress>
+    <obdcodefile />
+    <addressbits>29</addressbits>
+    <secured>false</secured>
+    <checksum>false</checksum>
+    <initprocedure>0</initprocedure>
+    <txaddrlist>
+      <addrlist>
+        <address>0x18db3300 Broadcast</address>
+        <broadcast>true</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x18da0000</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </txaddrlist>
+    <rxaddrlist>
+      <addrlist>
+        <address>0x18da0000</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </rxaddrlist>
+    <msgflags>
+      <flags>
+        <flag>CAN_29BIT_ID</flag>
+      </flags>
+      <flags>
+        <flag>ISO15765_FRAME_PAD</flag>
+      </flags>
+    </msgflags>
+    <connflags>
+      <flags>
+        <flag>CAN_29BIT_ID</flag>
+      </flags>
+    </connflags>
+    <ecus>
+      <ecuData>
+        <id>0x10</id>
+        <name>EMS - Engine Management System</name>
+      </ecuData>
+      <ecuData>
+        <id>0x11</id>
+        <name>ACM - Aftertreatment Control Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0x12</id>
+        <name>CAP - Clear Air Power ECU</name>
+      </ecuData>
+      <ecuData>
+        <id>0x18</id>
+        <name>TECU - Transmission ECU</name>
+      </ecuData>
+      <ecuData>
+        <id>0x20</id>
+        <name>CCIOM - Center Chassis I/O Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0x21</id>
+        <name>FCIOM - Front Chassis I/O Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0x22</id>
+        <name>RCIOM - Rear Chassis I/O Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0x23</id>
+        <name>APM - Air Pressure Management</name>
+      </ecuData>
+      <ecuData>
+        <id>0x24</id>
+        <name>VMCU - Vehicle Master Control Unit</name>
+      </ecuData>
+      <ecuData>
+        <id>0x25</id>
+        <name>TPM - Tire Pressure Management</name>
+      </ecuData>
+      <ecuData>
+        <id>0x26</id>
+        <name>WRG - Wireless Remote Gateway</name>
+      </ecuData>
+      <ecuData>
+        <id>0x28</id>
+        <name>ABS - Antilock Brake System</name>
+      </ecuData>
+      <ecuData>
+        <id>0x30</id>
+        <name>FAS - Front Axle Steering</name>
+      </ecuData>
+      <ecuData>
+        <id>0x31</id>
+        <name>EAS - Extra Axle Steering</name>
+      </ecuData>
+      <ecuData>
+        <id>0x40</id>
+        <name>CIOM - Cab I/O Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0x41</id>
+        <name>TGW2 - Telematics GateWay 2</name>
+      </ecuData>
+      <ecuData>
+        <id>0x50</id>
+        <name>DACU - Driver Assitance Control Unit</name>
+      </ecuData>
+      <ecuData>
+        <id>0x51</id>
+        <name>LPOS - Lane Position Object Control Unit</name>
+      </ecuData>
+      <ecuData>
+        <id>0x52</id>
+        <name>FLS - Forward Looking Sensor</name>
+      </ecuData>
+      <ecuData>
+        <id>0x53</id>
+        <name>SRS - Safety Restraint System</name>
+      </ecuData>
+      <ecuData>
+        <id>0x60</id>
+        <name>HMIIOM - Human-Machine Interface I/O Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0x61</id>
+        <name>IC - Instrument Cluster</name>
+      </ecuData>
+      <ecuData>
+        <id>0x62</id>
+        <name>SID - Secondary Information Display</name>
+      </ecuData>
+      <ecuData>
+        <id>0x63</id>
+        <name>VS - VideoSwitch</name>
+      </ecuData>
+      <ecuData>
+        <id>0x70</id>
+        <name>BLECU - Bending Light ECU</name>
+      </ecuData>
+      <ecuData>
+        <id>0x80</id>
+        <name>Audio - Audio</name>
+      </ecuData>
+      <ecuData>
+        <id>0x98</id>
+        <name>CCM - Climate Control Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0xa0</id>
+        <name>DDM - Driver Door Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0xa1</id>
+        <name>PDM - Passenger Door Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0xa2</id>
+        <name>LECM1 - Living Environment Control Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0xc0</id>
+        <name>Alarm - Alarm ECU</name>
+      </ecuData>
+      <ecuData>
+        <id>0xd0</id>
+        <name>BCU - Battery Control Unit - Local and Remote controlled main battery switch</name>
+      </ecuData>
+      <ecuData>
+        <id>0xd1</id>
+        <name>GPMECU_1 - General Purpose Machine Electronic Control Unit 1</name>
+      </ecuData>
+      <ecuData>
+        <id>0xd2</id>
+        <name>GPMECU_2 - General Purpose Machine Electronic Control Unit 2</name>
+      </ecuData>
+      <ecuData>
+        <id>0xd3</id>
+        <name>GPMECU_3 - General Purpose Machine Electronic Control Unit 3</name>
+      </ecuData>
+      <ecuData>
+        <id>0xe6</id>
+        <name>BBM - Body Builder Module</name>
+      </ecuData>
+      <ecuData>
+        <id>0xee</id>
+        <name>TACHO - Tachograph</name>
+      </ecuData>
+      <ecuData>
+        <id>0xef</id>
+        <name>HPCU - Hybrid Powertrain Control Unit</name>
+      </ecuData>
+    </ecus>
+    <config />
+    <pidgroups>
+      <pidgroup>
+        <id>1</id>
+        <name>SAE PIDs</name>
+        <mode_int>1</mode_int>
+      </pidgroup>
+    </pidgroups>
+    <capabilities />
+  </vehicle>
+  <vehicle>
+    <id>9</id>
+    <name>Toyota</name>
+    <speed>500000</speed>
+    <obdcodefile>obdcodes_Toyota.txt</obdcodefile>
+    <addressbits>11</addressbits>
+    <secured>false</secured>
+    <checksum>false</checksum>
+    <initprocedure>0</initprocedure>
+    <txaddrlist />
+    <rxaddrlist />
+    <msgflags />
+    <connflags />
+    <ecus />
+    <config />
+    <pidgroups />
+    <capabilities />
+  </vehicle>
+  <vehicle>
+    <id>8</id>
+    <name>Volvo</name>
+    <protocol>ISO9141</protocol>
+    <speed>10400</speed>
+    <testeraddress>0xF0</testeraddress>
+    <obdcodefile>obdcodes_Volvo.txt</obdcodefile>
+    <addressbits>11</addressbits>
+    <secured>false</secured>
+    <checksum>true</checksum>
+    <initprocedure>0</initprocedure>
+    <txaddrlist>
+      <addrlist>
+        <address>0x33 Broadcast</address>
+        <broadcast>true</broadcast>
+      </addrlist>
+      <addrlist>
+        <address>0x10</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </txaddrlist>
+    <rxaddrlist>
+      <addrlist>
+        <address>0xF0</address>
+        <broadcast>false</broadcast>
+      </addrlist>
+    </rxaddrlist>
+    <msgflags />
+    <connflags />
+    <ecus />
+    <config />
+    <pidgroups>
+      <pidgroup>
+        <id>1</id>
+        <name>SAE PIDs</name>
+        <mode_int>1</mode_int>
+      </pidgroup>
+    </pidgroups>
+    <capabilities>
+      <capability>
+        <name>VC1</name>
+      </capability>
+    </capabilities>
+  </vehicle>
+</ArrayOfVehicle>
